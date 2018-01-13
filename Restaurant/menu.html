@@ -2,48 +2,91 @@
 <html>
 <head>
 	<title>Home page</title>
+	<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+	<style>
+	/*TABLE STYLYING*/
+	#table1,th,td /*overall table, headings and row data*/
+	{
+		margin-left:auto; /*center table*/
+		margin-right:auto; /*center table*/
+		border-spacing: 10px 10px; /*spacing between cells*/
+		padding:5px 10px 5px 10px; /*spacing content inside of cells*/
+		text-align: center; /*center all text*/
+	}
+	th
+	{
+		border: 2px solid black;
+		background-color: #e0410b;
+		font-size: 120%;
+		color: white;
+	}
+	td
+	{
+		vertical-align: text-top; /*aligning table row data at the top of their given space*/
+	}	
+	#table2
+	{
+		margin-left:auto; /*center table*/
+		margin-right:auto; /*center table*/
+		width:75%;
+	}
+	/*END OF TABLE STYLING*/
+	</style>
 </head>
 <body>
-	<!--I added a Center tag for fun-->
 	<div id="restaurantName"> 
-		<h1><center>Backyard BBQ</center></h1>
+		<h1>Backyard BBQ</h1>
 	</div>
 	<hr />
-	<div id="navigation">
+	<div id="header">
 		<!--Add the Target attribute below to open link in new tab if wanted-->
-		<p><a href="home.html">Home</a>
-		<a href="menu.html">Menu</a>
-		<a href="contactUs.html">Contact Me</a></p>
+		<header>
+			<p>
+				<a href="home.html">Home</a>
+				<a href="menu.html">Menu</a>
+				<a href="contactUs.html">Contact Me</a>
+			</p>
+		</header>
 	</div>
 	<hr />
-	<table align="center">
-		<tr>
-			<th>Burger and Fries</th>
-			<th>Hot Dog and Chips</th>
-			<th>Italian Sausage and Peppers</th>
-		</tr>
-		<tr>
-			<td align="center">An American Classic!<br />Your choice - with or without cheese<br />Pickle, onion, tomato, and lettuce<br />Served with our famous thick cut <br />french fries <br />$7.95</td>
-			<td align="center">A Summer Classic!<br />Your choice - white or wheat bun<br /> Relish, mustard, and ketchup<br />Served with our house-made chips<br />$7.95</td>
-			<td align="center">An All Tim Favorite!<br /> Your choice - mild or spicy<br />Cole Slaw<br />Served with garlic mashers<br />$10.95</td>
-		</tr>
-	</table>
-	<table align="center">
-		<tr>
-			<th>Tenderloin Sandwich and Chips</th>
-			<th>House Salad</th>
-			<th>Brisket Sandwich and Fries</th>
-		</tr>
-		<tr>
-			<td align="center">Really Hits the Spot!<br />Plain or Sesame Seed Bun<br />Pickle, onion, tomato, and lettuce<br />Served with our house-made chips<br />$8.95</td>
-			<td align="center">On the lighter side<br />Your choice - with or without cheese<br />Iceberg lettuce, tomatoes, peppers<br />Thousand Island or Ranch Dressing<br />Served with a dinner roll<br />$6.95</td>
-			<td align="center">A Taste of Texas!<br />Smoked Brisket on thick-cut Texas Toast<br />Cole Slaw<br />Served with our famous thick-cut french fries<br />$7.95</td>		
-		</tr>
-	</Table>	
+	<div id="table1">
+		<table id="table1">
+			<tr><!--headers-->
+				<th>Burger and Fries</th>
+				<th>Hot Dog and Chips</th>
+				<th>Italian Sausage and Peppers</th>
+			</tr>
+			<tr><!--row data-->
+				<td><b>An American Classic!</b><br />Your choice - with or without cheese<br />Pickle, onion, tomato, and lettuce<br />Served with our famous thick cut <br />french fries <br />$7.95</td>
+				<td><b>A Summer Classic!</b><br />Your choice - white or wheat bun<br /> Relish, mustard, and ketchup<br />Served with our house-made chips<br />$7.95</td>
+				<td><b>An All Tim Favorite!</b><br /> Your choice - mild or spicy<br />Cole Slaw on the side<br />Served with garlic mashers<br />$10.95</td>
+			</tr>
+			<tr><!--headers-->
+				<th>Tenderloin Sandwich and Chips</th>
+				<th>House Salad</th>
+				<th>Brisket Sandwich and Fries</th>
+			</tr>
+			<tr><!--row data-->
+				<td><b>Really Hits the Spot!</b><br />Plain or Sesame Seed Bun<br />Pickle, onion, tomato, and lettuce<br />Served with our house-made chips<br />$8.95</td>
+				<td><b>On the lighter side</b><br />Your choice - with or without cheese<br />Iceberg lettuce, tomatoes, peppers<br />Thousand Island or Ranch Dressing<br />Served with a dinner roll<br />$6.95</td>
+				<td><b>A Taste of Texas!</b><br />Smoked Brisket on thick-cut Texas Toast<br />Cole Slaw on the side<br />Served with our famous thick-cut french fries<br />$7.95</td>		
+			</tr>
+		</table>
+	<div id="table2">
+		<table id="table2">
+			<tr>
+				<th>Beverages</th>
+			</tr>
+			<tr>
+				<td>Root Beer $3.00<br />Bottled Water $1.25<br />Lemonade $1.00<br />Iced Tea $1.25</td>
+			</tr>
+		</table>
+	</div>	
 	<hr />
-	<div id="location">
-		<center><p>Charcoal Street, Boston, MA, 32458</P>
-		<p>+1 (002) 667-9852</p></center>
+	<div id="footer">
+		<footer>
+			<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
+		</footer>
 	</div>	
 </body>
 </html>

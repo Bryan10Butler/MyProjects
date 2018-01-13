@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Contact Me</title>
+		<link href="css.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 		<h1>Contact Me</h1>
@@ -13,13 +14,11 @@
 		<!--Label as First Name. "for" acts as unique ID-->
 		<label for="firstName">First Name:</label><br/>
 		<!--User input of First Name-->
-			<input type="text" id="firstName" name="firstName"><br/>
+			<input type="text" id="firstName" name="firstName" required><br/>
 		<label for="lastName">Last Name:</label><br/>
-			<input type="text" id="lastName" name="firstName"><br/>
+			<input type="text" id="lastName" name="lastName" required><br/>
 		<label for="phone">Phone Number:</label><br/>
 			<input type="text" id="phone" name="phone"><br/>
-			
-			
 		<label for="contact">Best Time to call:</label><br/>
 		<select id="contact" name="contact">
 			<!--Creates the dropdown-->
@@ -48,14 +47,7 @@
 		<textarea id="info"></textarea><br/>
 		<input type="submit" name="submit" value="submit">
 		</form>
-		
-		
-		
-		
-		
 		<hr />
 		<p>&copy; 2018 Bryan Butler</p>
 	</body>
-
-
 </html>

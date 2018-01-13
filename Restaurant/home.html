@@ -2,33 +2,44 @@
 <html>
 <head>
 	<title>Home page</title>
+	<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+	<style>
+	#description
+	{
+	text-align: center;
+	background-color: #f4f2f2
+	}
+	</style>
 </head>
 <body>
 	<!--I added a Center tag for fun-->
 	<div id="restaurantName"> 
-		<h1><center>Backyard BBQ</center></h1>
+		<h1>Backyard BBQ</h1>
 	</div>
 	<hr />
-	<div id="navigation">
+	<div id="header">
 		<!--Add the Target attribute below to open link in new tab if wanted-->
-		<p><a href="home.html">Home</a>
-		<a href="menu.html">Menu</a>
-		<a href="contactUs.html">Contact Me</a></p>
+		<header>
+			<p>
+				<a href="home.html">Home</a>
+				<a href="menu.html">Menu</a>
+				<a href="contactUs.html">Contact Me</a>
+			</p>
+		</header>
 	</div>
-	<hr />
-	<!--Using ID as we only have 1 image on this Wire Frame-->
-	<!--width="400" height="150"--> 
-	<div id="image">
-		<center><img src="Images\Grill.jpg" alt="Grilling Utensils"/></center>
+	<hr /> 
+	<div id="image"><!--Inline styling below-->
+		<img src="Images\Grill.png" alt="Grilling Utensils" style="margin-left:auto; margin-right:auto; width:400px; height:150px; display:block;"/>
 	</div>
 	<div id="description">
-		<p align="center">Welcome to <b>The Grill</b>!</p>
-		<p align="center">Here at Backyard BBQ, we promise to make your BBQ experience BBQtastic!</p>
+		<p>Welcome to <b>The Grill</b>!<br />Here at Backyard BBQ, we promise to make your BBQ experience BBQtastic!</P>
 	</div>
 	<hr />
-	<div id="location">
-		<p align="center">Charcoal Street, Boston, MA, 32458</P>
-		<p align="center">+1 (002) 667-9852</p>
+	<div id="footer">
+		<footer>
+			<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
+		</footer>
 	</div>	
 </body>
 </html>
+

@@ -2,23 +2,49 @@
 <html>
 	<head>
 		<title>Bryan Butler's Portfolio</title>
+		<link href="css.css" rel="stylesheet" type="text/css"/>
+		<style>
+		table,th,td/*stating which elements to select*/ 
+		{
+			border:1px solid #292533;/*visible border*/
+			padding:5px 10px 5px 10px;/*top right bottom left; Inside cells*/
+			border-spacing:2px 5px;/*between cells*/
+		}
+		table
+		{
+			width:100%;*/stretches table out horizontally*/
+		}
+		td,th
+		{
+			height:30px;*/vertical height*/
+		}
+		th
+		{
+			background-color:#5b7d87;/*needed to separate from nth-child due to coloring*/
+			color: white;
+		}
+		tr:nth-child(odd)/*using odd number of rows for color*/
+		{
+			background: #d5d2cb;
+		}
+		</style>
 	</head>
 	<body>
 		<div id="title">
 		<h1>Bryan Butler's Portfolio</h1>
 		</div>
 		<div id="navigation">
+		Inline Border example removed <hr style="border-top: 3px double #8c2238;"/>
 		<hr />
 		<p><a href="portfolio.html" target="_blank">Portfolio</a>  
 			<a href="contactMe.html" target="_blank">Contact Me</a>  
 			<a href="testimonials.html" target="_blank">Testimonials</a></p>
-		<hr/>
+		<hr />
 		</div>
 		<div id="main">
 			<div id="aboutMe">
 				<div class="image"><img src="Images\Lion.jpg" alt="Photograph of a Male Lion"></div>
 				<div class="content"><h2><em>About Me</em></h2>
-				
 				<table>
 				<caption>Employment History</caption>
 				<tr>
