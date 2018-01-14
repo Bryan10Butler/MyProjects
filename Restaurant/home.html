@@ -2,43 +2,38 @@
 <html>
 <head>
 	<title>Home Page</title>
+	<!--External style sheet-->
 	<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
-	<!--Internal Style description-->
+	<!--Internal style sheet-->
 	<style>
-	#description
-	{
-	text-align: center;
-	background-color: #f4f2f2
-	}
+		#RestaurantDescription
+		{
+			text-align: center;
+			background-color: #f4f2f2;
+		}
 	</style>
 </head>
 <body>
-	<div id="restaurantName"> 
-		<h1>Backyard BBQ</h1>
+	<div id="header"> 
+			<h1>Backyard BBQ</h1>
 	</div>
 	<hr />
-	<div id="header">
-		<!--Add the Target attribute below to open link in new tab if wanted-->
-		<header>
-			<p>
-				<a href="home.html">Home</a>
-				<a href="menu.html">Menu</a>
-				<a href="contactUs.html">Contact Me</a>
-			</p>
-		</header>
+	<div id="navigation">
+		<a href="home.html">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="contactUs.html">Contact Me</a>
 	</div>
 	<hr /> 
-	<div id="image"><!--Inline styling below-->
-		<img src="Images\Grill.png" alt="Grilling Utensils" style="margin-left:auto; margin-right:auto; width:400px; height:150px; display:block;"/>
+	<div id="image">
+		<!--Inline style sheet-->
+		<img src="Images\Grill.png" alt="Grilling Utensils" style="margin-left:auto; margin-right:auto; margin-top: 30px; margin-bottom: 30px; width:400px; height:150px; display:block;"/>
 	</div>
-	<div id="description">
-		<p>Welcome to <b>The Grill</b>!<br />Here at Backyard BBQ, we promise to make your BBQ experience BBQtastic!</P>
+	<div id="RestaurantDescription">
+		Welcome to <b>The Grill</b>!<br />Here at Backyard BBQ, we promise to make your BBQ experience BBQtastic!
 	</div>
 	<hr />
 	<div id="footer">
-		<footer>
-			<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
-		</footer>
+		<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
 	</div>	
 </body>
 </html>

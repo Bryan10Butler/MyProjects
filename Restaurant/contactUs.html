@@ -2,117 +2,147 @@
 <html>
 <head>
 	<title>Home page</title>
+	<!--External style sheet-->
 	<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+	<!--Internal style sheet-->
 	<style>
-	input[type=text], select, textarea
-	{
-		width:50%;/*horizontal stretch of input box*/
-		padding:12px 20px;/*inside box spacing for content*/
-		margin:8px 0;/*8px space between input boxes; 0 space between label and input box*/
-		box-sizing: border-box;
-		border-radius: 4px;
-		border: 1px solid black;
-		background-color: #f8f8f8;
-		color: #e0410b;
-	}
-	input[type=submit]
-	{
-		background-color: #e0410b;
-		color: white; 
-		border-radius: 4px;
-		padding: 12px 20px;
-		margin-top: 20px
-	}
-	input[type=submit] 
-	{
-		background-color: #e0410b;
-		color: white;
-		padding: 12px 20px;
-		border: none;
-		border-radius: 4px;
-	}
-	input[type=submit]:hover
-	{
-	background-color: red;
-	}
-	label
-	{
-	float: left;
-	width: 300px;
-	}
+		input[type=text], select, textarea, radio, checkbox{
+			width: 100%;
+			margin-top: 10px;
+			padding: 12px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		label{
+			padding: 12px 12px 12px 0;
+			
+		}
+		input[type=submit]:hover{
+			background-color: red;
+		}
+		input[type=submit]{
+			background-color: #e0410b;
+			color: white;
+			border-radius: 4px;
+			margin-top: 20px;
+			padding: 5px;
+			border: none;
+			font-size: 100%;
+		}
+		
+		.container{
+			border-radius: 5px;
+			background-color: #f4f2f2;
+			padding: 20px;
+		}
+		.cLabel{
+			float: left;
+			width: 25%;
+			margin-top: 6px;
+		}
+		.cInput{
+			float: left;
+			width: 75%
+			margin-top: 6px;
+		}
+		.row:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
 	</style>
 </head>
 <body>
-	<!--I added a Center tag for fun-->
-	<div id="restaurantName"> 
+	<div id="header"> 
 		<h1>Backyard BBQ</h1>
 	</div>
 	<hr />
-	<div id="header">
-		<!--Add the Target attribute below to open link in new tab if wanted-->
-		<header>
-			<p><a href="home.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contactUs.html">Contact Me</a></p>
-		</header>
+	<div id="navigation">
+		<a href="home.html">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="contactUs.html">Contact Me</a>
 	</div>
 	<hr />
+	<!--Inline style sheet-->
 	<h2 style="color: #e0410b; text-align: left;">Contact Us</h2>
 	<!--Start of new form-->
+	<div class="container"
 	<form action="Submit.html" method="POST">
-		<!--Label to come before input depending on which side of the input you want text on-->
-		<div>
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name" required red>
+	<!--Labels and Text input-->
+		<div class="row">
+			<div class="cLabel">
+				<label for="fname">First Name:</label>
+			</div>
+			<div class="cInput">
+				<input type="text" id="fname" name="firstname">
+			</div>
 		</div>
-		<div>
-			<label for="email">Email:</label>
-			<input type="text" id="email" name="email" required>
+		<div class="row">
+			<div class="cLabel">
+				<label for="lname">Last Name:</label>
+			</div>
+			<div class="cInput">
+				<input type="text" id="lname" name="lastname">
+			</div>
 		</div>
-		<div>
-			<label for="phone">Phone:</label>
-			<input type="text" id="phone" name="phone" required>
+		<div class="row">
+			<div class="cLabel">
+				<label for="email">Email:</label>
+			</div>
+			<div class="cInput">
+				<input type="text" id="email" name="email">
+			</div>
 		</div>
-		<label for="inquiry" required>Reason for Inquiry:</label>
-		<!--Create drop down-->
-	<select id="inquiry" name="inquiry">
-		<option value="default">Catering</option>
-		<option value="private">Private Party</option>
-		<option value="Feedback">Feedback</option>
-		<option value="Other">Other</option>
-	</select><br />
-		<!--End of drop down-->
-		<!--Larger text area-->
-		<div>
-			<label for="additional">Additional Information:</label>
-			<textarea id="additional" name="additional information"></textarea>
+		<div class="row">
+			<div class="cLabel">
+				<label for="inquiry">Reason for Inquiry:</label>
+			</div>
+			<div class="cInput">
+				<select id="inquiry" name="inquiry">
+					<option value="default">Catering</option>
+					<option value="private">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
 		</div>
-		<!--End of larger text area-->
-		<!--Radio buttons-->
-		<div>
-			<label>Have you been to the Restaurant?</label>
-			<input type="radio" id="choice1" name="No" value="No"
-			<label for="choice1">No</label>
-			<input type="radio" id="choice2" name="Yes" value="yes"
-			<label for="choice2">Yes</label>
+		<div class="row">
+			<div class="cLabel">
+				<label for="additional">Additional Information:</label>
+			</div>
+			<div class="cInput">
+				<textarea id="additional" name="additional"></textarea>
+			</div>
 		</div>
-		<!--Check box-->
-		<label>Best days to contact you:</label>
-		<input type="checkbox" id="m" name="Monday">M
-		<input type="checkbox" id="t" name="Tuesday">T
-		<input type="checkbox" id="w" name="Tuesday">W
-		<input type="checkbox" id="Th" name="Tuesday">Thur
-		<input type="checkbox" id="F" name="Tuesday">F
-		<!--Submit Button-->
-		<div>
-		<input type="submit" value="Submit">
+		<div class="row">
+			<div class="cLabel">
+				<label>Have you been to the restaurant?</label>
+			</div>
+			<div class="cInput">
+				Yes: <input type="radio" id="choice1" name="radio" value="yes">
+				No: <input type="radio" id="choice2" name="radio" value="no">
+			</div>
+		</div>
+		<div class="row">
+			<div class="cLabel">
+				<label>Best days to contact you:</label>
+			</div>
+			<div class="cInput">
+				M <input type="checkbox" id="m" name="Monday">
+				T <input type="checkbox" id="m" name="Tuesday">
+				W <input type="checkbox" id="m" name="Wednesday">
+				Th <input type="checkbox" id="m" name="Thursday">
+				F <input type="checkbox" id="m" name="Friday">
+			</div>
+		</div>
+		<div class="row">
+			<input type="submit" value="submit">
 		</div>
 	</form>
-	<hr />
-	<div id="footer">
-		<footer>
-			<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
-		</footer>
 	</div>
+		<hr />
+		<div id="footer">
+			<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
+		</div>
 </body>
 </html>
