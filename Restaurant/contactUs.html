@@ -21,6 +21,7 @@
 		color: white; 
 		border-radius: 4px;
 		padding: 12px 20px;
+		margin-top: 20px
 	}
 	input[type=submit] 
 	{
@@ -33,6 +34,11 @@
 	input[type=submit]:hover
 	{
 	background-color: red;
+	}
+	label
+	{
+	float: left;
+	width: 300px;
 	}
 	</style>
 </head>
@@ -55,12 +61,18 @@
 	<!--Start of new form-->
 	<form action="Submit.html" method="POST">
 		<!--Label to come before input depending on which side of the input you want text on-->
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required red><br />
-		<label for="email">Email:</label>
-		<input type="text" id="email" name="email" required><br />
-		<label for="phone">Phone:</label>
-		<input type="text" id="phone" name="phone" required><br />
+		<div>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required red>
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" required>
+		</div>
+		<div>
+			<label for="phone">Phone:</label>
+			<input type="text" id="phone" name="phone" required>
+		</div>
 		<label for="inquiry" required>Reason for Inquiry:</label>
 		<!--Create drop down-->
 	<select id="inquiry" name="inquiry">
@@ -71,29 +83,30 @@
 	</select><br />
 		<!--End of drop down-->
 		<!--Larger text area-->
-		<label for="additional">Additional Information:</label>
-		<textarea id="additional" name="additional information"></textarea><br/>
+		<div>
+			<label for="additional">Additional Information:</label>
+			<textarea id="additional" name="additional information"></textarea>
+		</div>
 		<!--End of larger text area-->
 		<!--Radio buttons-->
-		<label>Have you been to the Restaurant?</label>
-		<input type="radio" id="choice1" name="No" value="No"
-		<label for="choice1">No</label>
-		<input type="radio" id="choice2" name="Yes" value="yes"
-		<label for="choice2">Yes</label><br />
+		<div>
+			<label>Have you been to the Restaurant?</label>
+			<input type="radio" id="choice1" name="No" value="No"
+			<label for="choice1">No</label>
+			<input type="radio" id="choice2" name="Yes" value="yes"
+			<label for="choice2">Yes</label>
+		</div>
 		<!--Check box-->
 		<label>Best days to contact you:</label>
-		<input type="checkbox" id="m" name="Monday">
-		<label for="m">M</label>
-		<input type="checkbox" id="t" name="Tuesday">
-		<label for="t">T</label>
-		<input type="checkbox" id="w" name="Tuesday">
-		<label for="t">W</label>
-		<input type="checkbox" id="Th" name="Tuesday">
-		<label for="t">Th</label>
-		<input type="checkbox" id="F" name="Tuesday">
-		<label for="t">F</label><br />
+		<input type="checkbox" id="m" name="Monday">M
+		<input type="checkbox" id="t" name="Tuesday">T
+		<input type="checkbox" id="w" name="Tuesday">W
+		<input type="checkbox" id="Th" name="Tuesday">Thur
+		<input type="checkbox" id="F" name="Tuesday">F
 		<!--Submit Button-->
+		<div>
 		<input type="submit" value="Submit">
+		</div>
 	</form>
 	<hr />
 	<div id="footer">

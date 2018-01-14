@@ -16,7 +16,7 @@ a:hover
 	color: #e0410b;
 }
 /*Header and Footer*/
-header
+#header
 {
 	text-align: left;
 }
@@ -24,8 +24,7 @@ footer
 {	
 text-align: center;
 }
-h1
+#restaurantName
 {
 	text-align: center;
-	font-family: "Comic Sans MS";
 }
