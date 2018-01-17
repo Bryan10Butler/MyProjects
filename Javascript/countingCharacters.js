@@ -94,24 +94,49 @@ var Bryan = new Array ("Aileen", "Parin", "Dan", "John");
 for (var i = 0; i < Bryan.length; i++) {
 	console.log("These are my friends " + Bryan);
 }
-*/
 
-var Bryan = new Array ("Aileen", "Parin", "Dan", "John", "Alex", "Jim");
+var Bryan = ["Aneki", "Quell", "Clarity", "Sleepy", "Roghar", "DM Crimson"];
 var team1 = new Array();
 var team2 = new Array();
 
 for (var i = 0; i < Bryan.length; i++) {
-	    if (i % 2 == 0) {
-			// if the index is even, add the person to team 1 
-			team1.push(Bryan[i]);
-    } else {
-		
-		// otherwise add them to team 2
-		team2.push(Bryan[i]);
-    }
+	if (i % 2 == 0) {
+		//push Bryan's array to team 1
+		team1.push(Bryan[i]);
+		//console.log below shows the steps the array took to get to end result
+		//console.log(team1);
+	}
 }
-	console.log(team1);
-	console.log(team2);
+		//console.log here shows end result
+		console.log(team1);
+*/
+
+//push pushes a new value to end of array
+//pop removes a value from the end of an array
+//removes removes the first value of the array
+//unshift add a value to the front of an array
+//fruits.slice(0, 2);
+//The slice(0,2) returns 2 elements, starting from position 0:
+//fruits.slice(0,2);
+//However, if we use splice(), then fruits will change as splice removes in addition to printing
+//.length can be used to add to the end of an array
+//fruits[fruits.length] = "blueberry"; //mango, gooseberry, blueberry
+//specifying a specific index can add to an array as well
+//fruits[2] = "pineapple"; // mango, gooseberry, pineapple
+
+
+
+
+
+
+var names = ['Bryan', 'Alex', 'Aileen', 'Dan'];
+
+names.unshift('John');
+
+console.log(names);
+
+
+
 
 	
 	
