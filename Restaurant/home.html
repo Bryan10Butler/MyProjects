@@ -2,39 +2,80 @@
 <html>
 <head>
 	<title>Home Page</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootStrap\css\bootstrap.min.css">
+	
+	<!--Theme-->
+	<link rel="stylesheet" href="bootStrap\css\bootstrap-theme.min.css">
+	
 	<!--External style sheet-->
 	<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+	
 	<!--Internal style sheet-->
 	<style>
-		#RestaurantDescription
-		{
-			text-align: center;
-			background-color: #f4f2f2;
-		}
+		<!--#RestaurantDescription {text-align: center;}-->
 	</style>
 </head>
 <body>
-	<div id="header"> 
-			<h1>Backyard BBQ</h1>
+<!-- Latest compiled JavaScript -->
+<script src="bootStrap\js\bootstrap.min.js"></script>
+
+<!-- jQuery library -->
+<script src="bootStrap\js\jquery-3.2.1.min.js"></script>
+
+	<div style="max-width: 1600px; margin: 0 auto; padding: 10px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="jumbotron" style="text-align: center";> 
+						<h1>Backyard BBQ</h1>
+						<h4>New location opening soon</h4>
+					</div>
+					<hr />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-pills nav-justified">
+						<li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="contactUs.html">Contact Me</a></li>
+					</ul>
+				</div>
+			</div>	
+				<hr /> 
+				
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="image">
+					<!--Inline style sheet-->
+						<img src="Images\Grill.png" class ="img-responsive" alt="Grilling Utensils" style="margin-left:auto; margin-right:auto; margin-top: 30px; margin-bottom: 30px; width:400px; height:150px; display:block;"/>
+					</div>
+				</div>	
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="RestaurantDescription">
+						<p>Welcome to <b>The Grill</b>!<br />Here at Backyard BBQ, we promise to make your BBQ experience BBQtastic!</P>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+			<hr />
+				<div class="col-xs-12">
+					<div id="footer">
+					<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
+					</div>	
+				</div>
+			</div>
+		</div>
 	</div>
-	<hr />
-	<div id="navigation">
-		<a href="home.html">Home</a>
-		<a href="menu.html">Menu</a>
-		<a href="contactUs.html">Contact Me</a>
-	</div>
-	<hr /> 
-	<div id="image">
-		<!--Inline style sheet-->
-		<img src="Images\Grill.png" alt="Grilling Utensils" style="margin-left:auto; margin-right:auto; margin-top: 30px; margin-bottom: 30px; width:400px; height:150px; display:block;"/>
-	</div>
-	<div id="RestaurantDescription">
-		Welcome to <b>The Grill</b>!<br />Here at Backyard BBQ, we promise to make your BBQ experience BBQtastic!
-	</div>
-	<hr />
-	<div id="footer">
-		<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
-	</div>	
 </body>
 </html>
 
