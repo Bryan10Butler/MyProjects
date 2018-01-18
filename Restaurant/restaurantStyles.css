@@ -11,12 +11,8 @@ body{
 #navigation{
 	text-align: center;
 }
-a:hover{
+/*a:hover{
 	color: red;
-}
-.red .active a,
-.red .active a:hover {
-    background-color: red;
-}
+}*/
 
 
