@@ -2,25 +2,35 @@
 <html>
 <head>
 	<title>Home page</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootStrap\css\bootstrap.min.css">
+	
+	<!--Theme-->
+	<link rel="stylesheet" href="bootStrap\css\bootstrap-theme.min.css">
+	
+	<!-- jQuery library -->
+	<script src="bootStrap\js\jquery-3.2.1.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="bootStrap\js\bootstrap.min.js"></script>
+	
 	<!--External style sheet-->
 	<link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+	
 	<!--Internal style sheet-->
 	<style>
-		input[type=text], select, textarea, radio, checkbox{
-			width: 100%;
+		input[type=text], select,textarea, radio, checkbox {
 			margin-top: 10px;
-			padding: 12px;
 			border: 1px solid #ccc;
 			border-radius: 4px;
 		}
-		label{
-			padding: 12px 12px 12px 0;
-			
-		}
-		input[type=submit]:hover{
+		input[type=submit]:hover {
 			background-color: red;
 		}
-		input[type=submit]{
+		input[type=submit] {
 			background-color: #e0410b;
 			color: white;
 			border-radius: 4px;
@@ -29,120 +39,182 @@
 			border: none;
 			font-size: 100%;
 		}
-		
-		.container{
-			border-radius: 5px;
-			background-color: #f4f2f2;
-			padding: 20px;
-		}
-		.cLabel{
-			float: left;
-			width: 25%;
-			margin-top: 6px;
-		}
-		.cInput{
-			float: left;
-			width: 75%
-			margin-top: 6px;
-		}
-		.row:after{
-			content: "";
-			display: table;
-			clear: both;
-		}
 	</style>
 </head>
 <body>
-	<div id="header"> 
-		<h1>Backyard BBQ</h1>
+	<div style="max-width: 1800px; margin: 0 auto; padding: 10px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="jumbotron" style="text-align: center; background-color: white; padding: 0px; margin: 0px;"> 
+						<h1>Backyard BBQ</h1>
+					</div>
+				</div>
+			</div><hr />
+			<div class="row">
+				<div class="col-xs-12">
+					<ul class="nav nav-pills nav-justified">
+						<li class="active"><a href="home.html"><span class="glyphicon glyphicon-home"></span></a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="contactUs.html">Contact Me</a></li>
+					</ul>
+				</div>
+			</div><hr />
+			<div class="row">
+				<div class="col-lg-12"; style="text-align: left; color: #e0410b">
+					<h3>Contact Us</h3>
+				</div>
+			</div>
+			<!--Start of new form-->
+			<form action="Submit.html" method="POST">
+			<!--Labels and Text input-->
+				<div class="row">
+					<div class="col-lg-3"; style="background-color: pink">
+						<div class="cLabel">
+							<label for="fname">First Name:</label>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="cInput">
+							<input type="text" id="fname" name="firstname">
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="cLabel">
+							<label for="lname">Last Name:</label>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="cInput">
+							<input type="text" id="lname" name="lastname">
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="cLabel">
+							<label for="email">Email:</label>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="cInput">
+							<input type="text" id="email" name="email">
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="cLabel">
+							<label for="inquiry">Reason for Inquiry:</label>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="cInput">
+							<select id="inquiry" name="inquiry">
+								<option value="default">Catering</option>
+								<option value="private">Private Party</option>
+								<option value="feedback">Feedback</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="cLabel">
+							<label for="additional">Additional Information:</label>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="cInput">
+							<textarea id="additional" name="additional"></textarea>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="cLabel">
+							<label>Have you been to the restaurant?</label>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="cInput">
+							Yes: <input type="radio" id="choice1" name="radio" value="yes">
+							No: <input type="radio" id="choice2" name="radio" value="no">
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="cLabel">
+							<label>Best days to contact you:</label>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="cInput">
+							M <input type="checkbox" id="m" name="Monday">
+							T <input type="checkbox" id="m" name="Tuesday">
+							W <input type="checkbox" id="m" name="Wednesday">
+							Th <input type="checkbox" id="m" name="Thursday">
+							F <input type="checkbox" id="m" name="Friday">
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+					<div class="col-lg-3">
+						<!--Null-->
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<input type="submit" value="Submit">
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
 	<hr />
-	<div id="navigation">
-		<a href="home.html">Home</a>
-		<a href="menu.html">Menu</a>
-		<a href="contactUs.html">Contact Me</a>
+	<div id="footer">
+		<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
 	</div>
-	<hr />
-	<!--Inline style sheet-->
-	<h2 style="color: #e0410b; text-align: left;">Contact Us</h2>
-	<!--Start of new form-->
-	<div class="container"
-	<form action="Submit.html" method="POST">
-	<!--Labels and Text input-->
-		<div class="row">
-			<div class="cLabel">
-				<label for="fname">First Name:</label>
-			</div>
-			<div class="cInput">
-				<input type="text" id="fname" name="firstname">
-			</div>
-		</div>
-		<div class="row">
-			<div class="cLabel">
-				<label for="lname">Last Name:</label>
-			</div>
-			<div class="cInput">
-				<input type="text" id="lname" name="lastname">
-			</div>
-		</div>
-		<div class="row">
-			<div class="cLabel">
-				<label for="email">Email:</label>
-			</div>
-			<div class="cInput">
-				<input type="text" id="email" name="email">
-			</div>
-		</div>
-		<div class="row">
-			<div class="cLabel">
-				<label for="inquiry">Reason for Inquiry:</label>
-			</div>
-			<div class="cInput">
-				<select id="inquiry" name="inquiry">
-					<option value="default">Catering</option>
-					<option value="private">Private Party</option>
-					<option value="feedback">Feedback</option>
-					<option value="other">Other</option>
-				</select>
-			</div>
-		</div>
-		<div class="row">
-			<div class="cLabel">
-				<label for="additional">Additional Information:</label>
-			</div>
-			<div class="cInput">
-				<textarea id="additional" name="additional"></textarea>
-			</div>
-		</div>
-		<div class="row">
-			<div class="cLabel">
-				<label>Have you been to the restaurant?</label>
-			</div>
-			<div class="cInput">
-				Yes: <input type="radio" id="choice1" name="radio" value="yes">
-				No: <input type="radio" id="choice2" name="radio" value="no">
-			</div>
-		</div>
-		<div class="row">
-			<div class="cLabel">
-				<label>Best days to contact you:</label>
-			</div>
-			<div class="cInput">
-				M <input type="checkbox" id="m" name="Monday">
-				T <input type="checkbox" id="m" name="Tuesday">
-				W <input type="checkbox" id="m" name="Wednesday">
-				Th <input type="checkbox" id="m" name="Thursday">
-				F <input type="checkbox" id="m" name="Friday">
-			</div>
-		</div>
-		<div class="row">
-			<input type="submit" value="submit">
-		</div>
-	</form>
-	</div>
-		<hr />
-		<div id="footer">
-			<p>Charcoal Street, Boston, MA, 32458<br />+1 (002) 667-9852</p>
-		</div>
 </body>
 </html>
