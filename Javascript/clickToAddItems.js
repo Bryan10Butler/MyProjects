@@ -1,4 +1,4 @@
-function clearErrors() {    
+/*function clearErrors() {    
     for (var loopCounter = 0; 
         loopCounter < document.forms["numberFun"].elements.length; 
         loopCounter++) {
@@ -46,4 +46,16 @@ function validateItems() {
    // We are returning false so that the form doesn't submit 
    // and so that we can see the results
    return false;
+}*/
+
+var direction = prompt("Should we STOP, SLOW, or GO?");
+if (direction == "STOP") {
+    console.log("STOP!");
+    alert("STOP!");
+} else if (direction == "SLOW") {
+    console.log("SLOW DOWN!");
+    alert("SLOW DOWN!");
+} else {
+    console.log("GO!");
+    alert("GO!");
 }
